@@ -27,7 +27,7 @@ const phasermsg = () => {
 export default {
     input: 'src/main.ts',
     output: {
-        file: './dist/bundle.js',
+        file: './docs/bundle.js',
         name: 'PhaserTemplate',
         format: 'iife',
         sourcemap: true
@@ -67,8 +67,8 @@ export default {
         url(),
         copy({
             targets: [
-                { src: 'index.html', dest: 'dist/' },
-                { src: 'public/*', dest: 'dist/' },
+                { src: 'index.html', dest: 'docs/' },
+                { src: 'public/*', dest: 'docs/' },
             ]
         }),
         phasermsg()
